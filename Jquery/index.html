@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+  <title>My Blog</title>
+
+  <!-- Link to jQuery Mobile CSS -->
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.5.2/jquery.mobile-1.5.2.min.css" />
+
+  <!-- jQuery Library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- jQuery Mobile JS -->
+  <script src="https://code.jquery.com/mobile/1.5.2/jquery.mobile-1.5.2.min.js"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+
+    .ui-page {
+      background-color: #fff;
+    }
+
+    /* Header Styling */
+    header {
+      background-color: #3498db;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background-color: #2c3e50;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 0 10px;
+      border-radius: 5px;
+      background-color: #3498db;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #2980b9;
+    }
+
+    /* Main Body Styling */
+    main {
+      padding: 20px;
+    }
+
+    .post {
+      background-color: #ecf0f1;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .post h2 {
+      color: #2c3e50;
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .post p {
+      color: #7f8c8d;
+      font-size: 18px;
+    }
+
+    .post .read-more {
+      color: #3498db;
+      font-size: 16px;
+      text-decoration: none;
+      margin-top: 10px;
+      display: inline-block;
+    }
+
+    .post .read-more:hover {
+      color: #2980b9;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 14px;
+    }
+
+    footer .footer-contact {
+      font-size: 16px;
+    }
+
+    footer a {
+      color: #3498db;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #2980b9;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 24px;
+      }
+
+      .navbar a {
+        font-size: 16px;
+        padding: 8px 15px;
+      }
+
+      .post h2 {
+        font-size: 22px;
+      }
+
+      .post p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- Main Page Container -->
+<div data-role="page" id="blogPage">
+
+  <!-- Header -->
+  <header>
+    <h1>My Tech Blog</h1>
+  </header>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#home" data-transition="slide">Home</a>
+    <a href="#about" data-transition="slide">About</a>
+    <a href="#contact" data-transition="slide">Contact</a>
+  </div>
+
+  <!-- Main Body -->
+  <div role="main" class="ui-content">
+
+    <!-- Blog Post 1 -->
+    <section class="post" id="post1">
+      <h2>Understanding jQuery Mobile</h2>
+      <p>jQuery Mobile is a touch-optimized web framework for smartphones and tablets, built on top of the popular jQuery JavaScript library. It allows developers to create responsive web apps with minimal effort...</p>
+      <a href="#post1" class="read-more">Read more...</a>
+    </section>
+
+    <!-- Blog Post 2 -->
+    <section class="post" id="post2">
+      <h2>Building a Responsive Website</h2>
+      <p>Responsive web design ensures that your website works well on all devices, whether it's a smartphone, tablet, or desktop computer. Learn how to use media queries, flexible layouts, and scalable images...</p>
+      <a href="#post2" class="read-more">Read more...</a>
+    </section>
+
+    <!-- Blog Post 3 -->
+    <section class="post" id="post3">
+      <h2>Why User Experience Matters</h2>
+      <p>User experience (UX) design is about creating products that provide meaningful and relevant experiences to users. A well-designed website is easy to navigate, intuitive, and provides value to users...</p>
+      <a href="#post3" class="read-more">Read more...</a>
+    </section>
+
+    <!-- Blog Post 4 -->
+    <section class="post" id="post4">
+      <h2>Introduction to Web Development Frameworks</h2>
+      <p>Web development frameworks are essential for building modern web applications. These frameworks provide a structured way of developing software and help developers focus on functionality...</p>
+      <a href="#post4" class="read-more">Read more...</a>
+    </section>
+
+    <!-- Blog Post 5 -->
+    <section class="post" id="post5">
+      <h2>Mastering CSS Grid and Flexbox</h2>
+      <p>CSS Grid and Flexbox are two of the most powerful layout systems in modern web development. Understanding both allows you to create complex and responsive designs with minimal code...</p>
+      <a href="#post5" class="read-more">Read more...</a>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Tech Blog | All Rights Reserved</p>
+    <p class="footer-contact">Email: <a href="mailto:contact@myblog.com">contact@myblog.com</a> | Phone: +1 234 567 890</p>
+    <p><a href="#home" data-transition="slide">Back to Top</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
